@@ -103,7 +103,12 @@ public class PracticalTest01Var01MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (requestCode == SECONDARY_ACTIVITY_REQUEST_CODE) {
-            Toast.makeText(this, "The activity returned with result " + resultCode, Toast.LENGTH_LONG).show();
+            String text = "Cancel";
+
+            if (resultCode != 0 )
+                text = "Register";
+
+            Toast.makeText(this, text + " was pushed.", Toast.LENGTH_LONG).show();
         }
     }
 }

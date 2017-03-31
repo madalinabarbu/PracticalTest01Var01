@@ -4,13 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="ro.pub.cs.systems.eim.practicaltest01var01.PracticalTest01Var01SecondaryActivity"
->
+    android:weightSum="1">
 
-    <TextView
-        android:id="@+id/secondaryText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,4 +24,12 @@
             android:id="@+id/register"
             android:text="@string/register"/>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/secondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ems="15"
+        android:layout_weight="0.09" />
 </LinearLayout>
